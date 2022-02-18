@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class HomePage extends StatefulWidget {
-  const HomePage({Key? key, required this.title}) : super(key: key);
+class Home extends StatefulWidget {
+  const Home({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
   @override
-  State<HomePage> createState() => _HomePageState();
+  State<Home> createState() => _HomeState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomeState extends State<Home> {
   int _counter = 0;
 
   void _incrementCounter() {
