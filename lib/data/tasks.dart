@@ -6,7 +6,7 @@ class Tasks {
   final Faker _faker = Faker();
   List<Task>? tasks;
 
-  factory Tasks(int initLen) => Tasks._internal();
+  factory Tasks() => Tasks._internal();
 
   Tasks._internal() {
     tasks = List.generate(15, (index) => Task(
