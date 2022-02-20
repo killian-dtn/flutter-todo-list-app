@@ -10,8 +10,9 @@ class TaskMaster extends StatelessWidget {
   TaskMaster({Key? key, required this.data}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) => ListView.builder(
+  Widget build(BuildContext context) => ListView.separated(
     itemCount: data!.length,
     itemBuilder: (context, i) => TaskPreview(task: data![i]),
+    separatorBuilder: (context, i) => const Divider(),
   );
 }
