@@ -17,5 +17,9 @@ class AllTasksState extends State<AllTasks> {
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(title: const Text("All tasks")),
     body: TaskMaster(data: widget.tasksData.tasks),
+    floatingActionButton: FloatingActionButton(
+      onPressed: () {},
+      child: const Icon(Icons.add)
+    ),
   );
 }
