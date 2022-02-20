@@ -11,7 +11,7 @@ class TodoListApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MaterialApp(home: AllTasks()),
+      home: MaterialApp(home: AllTasks()),
     );
   }
 }
