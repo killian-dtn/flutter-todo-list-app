@@ -6,12 +6,14 @@ import 'task_preview.dart';
 
 class TaskMaster extends StatelessWidget {
   List<Task>? data;
+  final Function(Task? task, Function(Task?) callback) onPreviewTapCallback;
 
-  TaskMaster({Key? key, required this.data}) : super(key: key);
+  TaskMaster({ Key? key, required this.data, required this.onPreviewTapCallback }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) => ListView.builder(
+  Widget build(BuildContext context) => Expanded(child: ListView.separated(
     itemCount: data!.length,
-    itemBuilder: (context, i) => TaskPreview(task: data![i]),
-  );
+    itemBuilder: (context, i) => TaskPreview(task: data![i], onTapCallback: onPreviewTapCallback),
+    separatorBuilder: (context, i) => const Divider(),
+  ));
 }
