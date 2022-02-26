@@ -1,6 +1,6 @@
 # todolist
 
-TD1
+TD
 
 ## Getting Started
 
