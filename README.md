@@ -1,6 +1,6 @@
 # todolist
 
-TD1 BRIL
+TD1
 
 ## Getting Started
 
